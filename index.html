@@ -5,29 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">  
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="grid">
+    <header>
+      <img src="images/logo.svg" alt="Base Apparel logo" class="logo">
+    </header>
+    <section class="text">
+      <h1 class="title"><span>We're</span> coming soon</h1>
+      <p class="paragraph">  Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p> 
+      <label for="email">
+        <input type="email" id="email" class="input" placeholder="Email Address">
+        <img src="images/icon-error.svg" alt="error icon" class="error-icon invisible">
+        <button class="btn"><img src="images/icon-arrow.svg" alt="arrow icon"></button>
+      </label>
+      <p class="error-message invisible">Please provide a valid email</p>
+      </section>
+      <section class="display">
+        <img src="images/hero-desktop.jpg" class="display__img display__img-desktop" alt="woman model">
+        <img src="images/hero-mobile.jpg" class="display__img display__img-mobile" alt="woman model">
+      </section>
+  </div>
 
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://gituhb.com/hectormidev">@hectormidev</a>.
     </p>
   </footer>
+  <script src="code.js"></script>
 </body>
 </html>
